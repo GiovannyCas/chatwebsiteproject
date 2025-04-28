@@ -5,6 +5,7 @@ import {createBrowserRouter, createRoutesFromElements, RouterProvider , Route} f
 import './App.css'
 import LoginPage from "@/app/login/page.tsx";
 import SignUpPage from "@/app/signup/page.tsx";
+import DashBoardPage from "@/app/dashboard/page.tsx";
 
 
 const router = createBrowserRouter(
@@ -12,7 +13,9 @@ const router = createBrowserRouter(
         <Route path={"/"} >
             <Route index element={<LoginPage />}/>
             <Route path={'/signup'} element={<SignUpPage />}/>
+            <Route path={'/home'} element={<DashBoardPage/>}/>
         </Route>
+
     )
 )
 
